@@ -194,7 +194,7 @@ export default function Projects() {
           {projects.map((project, index) => (
             <div
               key={index}
-              ref={(el) => (cardsRef.current[index] = el!)}
+              ref={(el) => { cardsRef.current[index] = el!; }}
               className="group perspective-1000"
               style={{ transformStyle: 'preserve-3d' }}
             >

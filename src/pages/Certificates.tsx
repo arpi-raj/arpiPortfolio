@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger)
 const CertificateCard = forwardRef<
   HTMLDivElement,
   { src: string; name: string; link: string; index: number }
->(({ src, name, link, index }, ref) => {
+>(({ src, name, link, }) => {
   const cardRef = useRef<HTMLDivElement>(null)
   const imageRef = useRef<HTMLImageElement>(null)
   const overlayRef = useRef<HTMLDivElement>(null)
